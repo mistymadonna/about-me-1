@@ -55,14 +55,14 @@ if (answer4.toLowerCase() === 'y' || answer4.toUpperCase() === 'Y' || answer4 ==
   console.log(userName + ' failed to answer Question 4.')
 }
 
-var answer5 = prompt('Does Nolan like animals?');
+var answer5 = prompt('Does Nolan like being outdoors and going to the beach?');
 console.log('The user answer to Question 5 was ' + answer5);
 if (answer5.toLowerCase() === 'y' || answer5.toUpperCase() === 'Y' || answer5 === 'Yes' || answer5 === 'yes') {
-  alert('Correct! Nolan loves animals more than he likes people.');
+  alert('Correct! Nolan loves being outdoors and going out and seeing new things.');
   console.log(userName + ' got Question 5 correct!');
 } else if (answer5.toLowerCase() === 'n' || answer5.toUpperCase() === 'N' || answer5 === 'No' || answer5 === 'no') {
-  alert('Incorrect! Nolan is offended that you think he does not like puppies or kittens.');
-  console.log(userName + ' got Question 5 incorrect. Offending him slightly.')
+  alert('Incorrect! Sorry, maybe next time.');
+  console.log(userName + ' got Question 5 incorrect.')
 } else {
   alert('You should have given a Y or N answer, so you lose this round.');
   console.log(userName + ' failed to answer Question 5.')
