@@ -1,8 +1,6 @@
 var userName = prompt('Hello there! I hope your day is going great! May I ask for your name?');
 console.log('The user said that their name is ' + userName);
-
 alert('Hi there, ' + userName + ', I\'m going to ask you some questions about myself if thats alright to you. Please answer Y / yes or N / no for the best results.');
-
 var answer1 = prompt('Was Nolan born in Michigan?');
 console.log('The users answer to Question 1 was ' + answer1);
 if (answer1.toLowerCase() === 'y' || answer1.toUpperCase() === 'Y' || answer1 === 'Yes' || answer1 === 'yes') {
@@ -15,7 +13,6 @@ if (answer1.toLowerCase() === 'y' || answer1.toUpperCase() === 'Y' || answer1 ==
   alert('You should have given a Y or N answer, so you lose this round. Try again next time.');
   console.log(userName + ' failed to answer Question 1.')
 }
-
 var answer2 = prompt('Is Nolans favorite sport football?');
 console.log('The users answer to Question 2 was ' + answer2);
 if (answer2.toLowerCase() === 'n'|| answer2.toUpperCase() === 'N' || answer2 === 'No' || answer2 === 'no') {
@@ -28,7 +25,6 @@ if (answer2.toLowerCase() === 'n'|| answer2.toUpperCase() === 'N' || answer2 ===
   alert('You should have given a Y or N answer, so you lose this round.');
   console.log(userName + ' failed to answer Question 2.')
 }
-
 var answer3 = prompt('Does Nolan have any siblings?');
 console.log('The user answer to Question 3 was ' + answer3);
 if (answer3.toLowerCase() === 'y' || answer3.toUpperCase() === 'Y' || answer3 === 'Yes' || answer3 === 'yes') {
@@ -41,7 +37,6 @@ if (answer3.toLowerCase() === 'y' || answer3.toUpperCase() === 'Y' || answer3 ==
   alert('You should have given a Y or N answer, so you lose this round.');
   console.log(userName + ' failed to answer Question 3.')
 }
-
 var answer4 = prompt('Is Nolan a Michigan State Spartans fan?');
 console.log('The user answer to Question 4 was ' + answer4);
 if (answer4.toLowerCase() === 'y' || answer4.toUpperCase() === 'Y' || answer4 === 'Yes' || answer4 === 'yes') {
@@ -54,7 +49,6 @@ if (answer4.toLowerCase() === 'y' || answer4.toUpperCase() === 'Y' || answer4 ==
   alert('You should have given a Y or N answer, so you lose this round.');
   console.log(userName + ' failed to answer Question 4.')
 }
-
 var answer5 = prompt('Does Nolan like being outdoors and going to the beach?');
 console.log('The user answer to Question 5 was ' + answer5);
 if (answer5.toLowerCase() === 'y' || answer5.toUpperCase() === 'Y' || answer5 === 'Yes' || answer5 === 'yes') {
@@ -67,8 +61,7 @@ if (answer5.toLowerCase() === 'y' || answer5.toUpperCase() === 'Y' || answer5 ==
   alert('You should have given a Y or N answer, so you lose this round.');
   console.log(userName + ' failed to answer Question 5.')
 }
-
-var answer6 = prompt('How old is Nolan?');
+var answer6 = prompt('How old is Nolan? ');
 console.log('The user answer to Question 6 was ' + answer6);
 if (answer6 == 19 || answer6 === 'Nineteen' || answer6 === 'nineteen') {
   alert('Spot on! You guessed correct! Good work today.');
