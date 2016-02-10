@@ -3,10 +3,10 @@ console.log('The user said that their name is ' + userName);
 alert('Hi there, ' + userName + ', I\'m going to ask you some questions about myself if thats alright to you. Please answer Y / yes or N / no for the best results.');
 var answer1 = prompt('Was Nolan born in Michigan?');
 console.log('The users answer to Question 1 was ' + answer1);
-if (answer1.toLowerCase() === 'y' || answer1.toUpperCase() === 'Y' || answer1 === 'Yes' || answer1 === 'yes') {
+if (answer1 === 'y' || answer1 === 'Y' || answer1 === 'Yes' || answer1 === 'yes') {
   alert('Nice job! I was born in Lansing Michigan in 1996 at Sparrow hospital.');
   console.log(userName + ' nailed Question 1.');
-} else if (answer1.toLowerCase() === 'n' || answer1.toUpperCase() === 'N' || answer1 === 'No' || answer1 === 'no') {
+} else if (answer1 === 'n' || answer1 === 'N' || answer1 === 'No' || answer1 === 'no') {
   alert('Sorry, you\'re incorrect!!! Better luck next time.');
   console.log(userName + ' answered Question 1 incorrect.')
 } else {
@@ -15,10 +15,10 @@ if (answer1.toLowerCase() === 'y' || answer1.toUpperCase() === 'Y' || answer1 ==
 }
 var answer2 = prompt('Is Nolans favorite sport football?');
 console.log('The users answer to Question 2 was ' + answer2);
-if (answer2.toLowerCase() === 'n'|| answer2.toUpperCase() === 'N' || answer2 === 'No' || answer2 === 'no') {
+if (answer2 === 'n'|| answer2 === 'N' || answer2 === 'No' || answer2 === 'no') {
   alert('Correct! My favorite sport is, and always will be hockey.');
   console.log(userName + ' answered Question 2 correctly!');
-} else if (answer2.toLowerCase() === 'y' || answer2.toUpperCase() === 'Y' || answer2 === 'Yes' || answer2 === 'yes') {
+} else if (answer2 === 'y' || answer2 === 'Y' || answer2 === 'Yes' || answer2 === 'yes') {
   alert('Sorry, you\'re incorrect!!!');
   console.log(userName + ' got Question 2 wrong.');
 } else {
@@ -27,10 +27,10 @@ if (answer2.toLowerCase() === 'n'|| answer2.toUpperCase() === 'N' || answer2 ===
 }
 var answer3 = prompt('Does Nolan have any siblings?');
 console.log('The user answer to Question 3 was ' + answer3);
-if (answer3.toLowerCase() === 'y' || answer3.toUpperCase() === 'Y' || answer3 === 'Yes' || answer3 === 'yes') {
+if (answer3 === 'y' || answer3 === 'Y' || answer3 === 'Yes' || answer3 === 'yes') {
   alert('Good job! I have one sister named Madison. She does not like me very much.');
   console.log(userName + ' aced Question 3.');
-} else if (answer3.toLowerCase() === 'n' || answer3.toUpperCase() === 'N' || answer3 === 'No' || answer3 === 'no') {
+} else if (answer3 === 'n' || answer3 === 'N' || answer3 === 'No' || answer3 === 'no') {
   alert('Sorry, you\'re inccorect!!!');
   console.log(userName + ' did not quite hit the mark on Question 3.')
 } else {
@@ -39,10 +39,10 @@ if (answer3.toLowerCase() === 'y' || answer3.toUpperCase() === 'Y' || answer3 ==
 }
 var answer4 = prompt('Is Nolan a Michigan State Spartans fan?');
 console.log('The user answer to Question 4 was ' + answer4);
-if (answer4.toLowerCase() === 'y' || answer4.toUpperCase() === 'Y' || answer4 === 'Yes' || answer4 === 'yes') {
+if (answer4 === 'y' || answer4 === 'Y' || answer4 === 'Yes' || answer4 === 'yes') {
   alert('Correct answer! Go Green, Go White! Also a lot better than the Michigan Wolverines.');
   console.log(userName + ' perfected Question 4.');
-} else if (answer4.toLowerCase() === 'n' || answer4.toUpperCase() === 'N' || answer4 === 'No' || answer4 === 'no') {
+} else if (answer4 === 'n' || answer4 === 'N' || answer4 === 'No' || answer4 === 'no') {
   alert('I am dissapointed. You are incorrect!!!');
   console.log(userName + ' got Question 4 wrong. Sadly.')
 } else {
@@ -51,10 +51,10 @@ if (answer4.toLowerCase() === 'y' || answer4.toUpperCase() === 'Y' || answer4 ==
 }
 var answer5 = prompt('Does Nolan like being outdoors and going to the beach?');
 console.log('The user answer to Question 5 was ' + answer5);
-if (answer5.toLowerCase() === 'y' || answer5.toUpperCase() === 'Y' || answer5 === 'Yes' || answer5 === 'yes') {
+if (answer5 === 'y' || answer5 === 'Y' || answer5 === 'Yes' || answer5 === 'yes') {
   alert('Correct! Nolan loves being outdoors and going out and seeing new things.');
   console.log(userName + ' got Question 5 correct!');
-} else if (answer5.toLowerCase() === 'n' || answer5.toUpperCase() === 'N' || answer5 === 'No' || answer5 === 'no') {
+} else if (answer5 === 'n' || answer5 === 'N' || answer5 === 'No' || answer5 === 'no') {
   alert('Incorrect! Sorry, maybe next time.');
   console.log(userName + ' got Question 5 incorrect.')
 } else {
