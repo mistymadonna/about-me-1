@@ -1,3 +1,6 @@
+//JS file for Feb 9 class demo
+// A guessing game about you with 5 questions for the user, and a different response to the user depending upon if the y got the right or wrong answer
+
 var userName = prompt('What is your name?');
 console.log('The user said that their name is ' + userName);
 
