@@ -1,15 +1,15 @@
-var userName = prompt('What is your name?');
+var userName = prompt('Hello there! I hope your day is going great! May I ask for your name?');
 console.log('The user said that their name is ' + userName);
 
-alert('Hi there, ' + userName + ', I\'m going to ask you some questions about myself. Please answer Y/y or N/n.');
+alert('Hi there, ' + userName + ', I\'m going to ask you some questions about myself if thats alright to you. Please answer Y / yes or N / no for the best results.');
 
 var answer1 = prompt('Was Nolan born in Michigan?');
 console.log('The users answer to Question 1 was ' + answer1);
 if (answer1.toLowerCase() === 'y' || answer1.toUpperCase() === 'Y' || answer1 === 'Yes' || answer1 === 'yes') {
-  alert('Nice job! I was born in Lansing Michigan.');
+  alert('Nice job! I was born in Lansing Michigan in 1996 at Sparrow hospital.');
   console.log(userName + ' nailed Question 1.');
 } else if (answer1.toLowerCase() === 'n' || answer1.toUpperCase() === 'N' || answer1 === 'No' || answer1 === 'no') {
-  alert('Sorry, you\'re incorrect!!!');
+  alert('Sorry, you\'re incorrect!!! Better luck next time.');
   console.log(userName + ' answered Question 1 incorrect.')
 } else {
   alert('You should have given a Y or N answer, so you lose this round. Try again next time.');
@@ -45,7 +45,7 @@ if (answer3.toLowerCase() === 'y' || answer3.toUpperCase() === 'Y' || answer3 ==
 var answer4 = prompt('Is Nolan a Michigan State Spartans fan?');
 console.log('The user answer to Question 4 was ' + answer4);
 if (answer4.toLowerCase() === 'y' || answer4.toUpperCase() === 'Y' || answer4 === 'Yes' || answer4 === 'yes') {
-  alert('Correct answer! Go Green, Go White!');
+  alert('Correct answer! Go Green, Go White! Also a lot better than the Michigan Wolverines.');
   console.log(userName + ' perfected Question 4.');
 } else if (answer4.toLowerCase() === 'n' || answer4.toUpperCase() === 'N' || answer4 === 'No' || answer4 === 'no') {
   alert('I am dissapointed. You are incorrect!!!');
@@ -71,7 +71,7 @@ if (answer5.toLowerCase() === 'y' || answer5.toUpperCase() === 'Y' || answer5 ==
 var answer6 = prompt('How old is Nolan?');
 console.log('The user answer to Question 6 was ' + answer6);
 if (answer6 == 19 || answer6 === 'Nineteen' || answer6 === 'nineteen') {
-  alert('Spot on! You guessed correct!');
+  alert('Spot on! You guessed correct! Good work today.');
   console.log(userName + ' got Question 6 correct!');
 } else if (answer6 < 19 || answer6 === 'Sixteen' || answer6 === 'Seventeen' || answer6 === 'sixteen' || answer6 === 'seventeen' || answer6 === 'Eighteen' || answer6 === 'eighteen') {
   alert('Incorrect! You guessed too young.');
