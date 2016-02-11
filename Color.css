@@ -1,0 +1,92 @@
+#name {
+  margin-top: 0px;
+  text-align: center;
+  font-family: Garamond;
+  font-size: 75px;
+  padding: 75px;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-image: url(https://scontent-sea1-1.xx.fbcdn.net/hphotos-xpt1/v/t1.0-9/12096352_1249580028401221_8016263753976909393_n.jpg?oh=178cce9ef4ba82d23a5b5e99eec9c2b3&oe=5722C27D)
+}
+h1 {
+  color: DarkRed;
+}
+#biography {
+  font-family:Impact;
+  font-size: 50px;
+  margin-top: -50px;
+  margin-bottom: 0px;
+}
+#familymemberstitle {
+  font-family:Impact;
+  font-size: 50px;
+  margin-top: -10px;
+  margin-bottom: 15px;
+}
+#liex {
+  font-family:Impact;
+  font-size: 50px;
+  margin-top: -10px;
+  margin-bottom: 15px;
+}
+#liseducation {
+  font-family:Impact;
+  font-size: 50px;
+  margin-top: -10px;
+  margin-bottom: 15px;
+}
+body {
+  background-color: LightSlateGrey;
+}
+p {
+  background-color: DarkGoldenRod;
+}
+#liexp {
+font-size: 15px;
+margin-left: -15px;
+line-height: 13px;
+}
+#liedu {
+  line-height: 0px;
+  font-size: 15px;
+  margin-left: -15px;
+}
+#familymembers {
+  line-height: 0px;
+  font-size: 15px;
+  margin-left: -15px;
+  margin-top: -10px;
+}
+#listofgoalstitle {
+  font-family:Impact;
+  font-size: 50px;
+  margin-top: -10px;
+  margin-bottom: -10px;
+}
+h2 {
+    color: White;
+    margin-top: -5px;
+}
+#toptentitle {
+  font-family:Impact;
+  font-size: 50px;
+  margin-top: -10px;
+  margin-bottom: 15px;
+}
+h4 {
+    color: White;
+    font-size: 20px;
+    margin-top: -5px;
+}
+li {
+    background-color: DarkGoldenRod;
+    opacity: 0.75;
+    font-family: Verdana;
+    padding: 10px;
+}
+  #tenlist {
+    line-height: 0px;
+    font-size: 15px;
+    margin-left: -15px;
+    margin-top: -10px;
+}
