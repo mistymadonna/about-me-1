@@ -4,30 +4,42 @@ console.log('The user said that their name is ' + userName);
 alert('Hi there, ' + userName + ', I\'m going to ask you some questions about myself. Please answer Y/y or N/n.');
 var correctAnswers = 0
 
-var answer1 = prompt('Was Nolan born in Michigan?');
-console.log('The users answer to Question 1 was ' + answer1);
-if (answer1.toLowerCase() === 'y' || answer1.toUpperCase() === 'Y' || answer1 === 'Yes' || answer1 === 'yes') {
-  alert('Nice job! I was born in Lansing Michigan.');
-  correctAnswers++;
-  console.log(userName + ' nailed Question 1.')
-} else if (answer1.toLowerCase() === 'n' || answer1.toUpperCase() === 'N' || answer1 === 'No' || answer1 === 'no') {
-  alert('Sorry, you\'re incorrect!!!');
-  console.log(userName + ' answered Question 1 incorrect.')
-} else {
-  alert('You should have given a Y or N answer, so you lose this round. Try again next time.');
-  console.log(userName + ' failed to answer Question 1.')
+var pTagOne = document.getElementById('ans-one');
+
+function seattleHome() {
+  var answer1 = prompt('Was Nolan born in Michigan?');
+  console.log('The users answer to Question 1 was ' + answer1);
+  if (answer1.toLowerCase() === 'y' || answer1.toUpperCase() === 'Y' || answer1 === 'Yes' || answer1 === 'yes') {
+    //  alert('Nice job! I was born in Lansing Michigan.');
+    pTagOne.textContent = 'Nice job! I was born in Lansing Michigan.';
+    correctAnswers++;
+    console.log(userName + ' nailed Question 1.')
+  } else if (answer1.toLowerCase() === 'n' || answer1.toUpperCase() === 'N' || answer1 === 'No' || answer1 === 'no') {
+    //  alert('Sorry, you\'re incorrect!!!');
+    pTagOne.textContent = ('Sorry, you\'re incorrect!!!');
+  }
 }
+seattleHome();
+
+// if (){
+//  console.log(userName + ' answered Question 1 incorrect.')
+//   pTagOne.textContent = 'Nope, ' + userName + ' !';
+// } else {
+//  alert('You should have given a Y or N answer, so you lose this round. Try again next time.');
+//  console.log(userName + ' failed to answer Question 1.')
+// }
 
 var answer2 = prompt('Is Nolans favorite sport football?');
 console.log('The users answer to Question 2 was ' + answer2);
-if (answer2.toLowerCase() === 'n'|| answer2.toUpperCase() === 'N') {
-  alert('Correct! My favorite sport is, and always will be hockey.');
+if (answer2.toLowerCase() === 'n' || answer2.toUpperCase() === 'N') {
+//  alert('Correct! My favorite sport is, and always will be hockey.');
   correctAnswers++;
   console.log(userName + ' answered Question 2 correctly!');
 } else if (answer2.toLowerCase() === 'y' || answer2.toUpperCase() === 'Y') {
-  alert('Sorry, you\'re incorrect!!!');
+//  alert('Sorry, you\'re incorrect!!!');
   console.log(userName + ' got Question 2 wrong.');
 } else {
+//
   alert('You should have given a Y or N answer, so you lose this round.');
   console.log(userName + ' failed to answer Question 2.')
 }
@@ -91,7 +103,7 @@ if (answer6 == 19) {
 var maxGuesses = 4;
 var currentGuesses = 0;
 console.log('Before the while loop, faveNum is' + faveNum);
-while(faveNum !== 13 && maxGuesses > currentGuesses) {
+while (faveNum !== 13 && maxGuesses > currentGuesses) {
   var faveNum = parseInt(prompt('What is Nolan\'s favorite number?'));
   console.log('faveNum: ' + faveNum)
   if (faveNum > 13) {
@@ -113,16 +125,16 @@ while(faveNum !== 13 && maxGuesses > currentGuesses) {
 
 var familys = ['Madison', 'Kelly', 'Greg', 'Sally', 'Bernard', 'Doug'];
 var isCorrect = false;
-while(isCorrect === false) {
+while (isCorrect === false) {
   var familysAnswer = prompt('Can you name one of Nolan\'s family members?');
-  for (i = 0; i < familys.length; i++){
+  for (i = 0; i < familys.length; i++) {
     if (familysAnswer == familys[i]) {
       alert('Correct!');
       isCorrect = true;
       correctAnswers++;
     }
   }
-  if (isCorrect == false){
+  if (isCorrect == false) {
     alert('Incorrect!');
   }
 }
