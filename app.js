@@ -29,114 +29,150 @@ seattleHome();
 //  console.log(userName + ' failed to answer Question 1.')
 // }
 
-var answer2 = prompt('Is Nolans favorite sport football?');
-console.log('The users answer to Question 2 was ' + answer2);
-if (answer2.toLowerCase() === 'n' || answer2.toUpperCase() === 'N') {
-//  alert('Correct! My favorite sport is, and always will be hockey.');
-  correctAnswers++;
-  console.log(userName + ' answered Question 2 correctly!');
-} else if (answer2.toLowerCase() === 'y' || answer2.toUpperCase() === 'Y') {
-//  alert('Sorry, you\'re incorrect!!!');
-  console.log(userName + ' got Question 2 wrong.');
-} else {
-//
-  alert('You should have given a Y or N answer, so you lose this round.');
-  console.log(userName + ' failed to answer Question 2.')
-}
+var pTagTwo = document.getElementById('ans-two');
 
-var answer3 = prompt('Does Nolan have any siblings?');
-console.log('The user answer to Question 3 was ' + answer3);
-if (answer3.toLowerCase() === 'y' || answer3.toUpperCase() === 'Y') {
-  alert('Good job! I have one sister named Madison. She does not like me very much.');
-  correctAnswers++;
-  console.log(userName + ' aced Question 3.');
-} else if (answer3.toLowerCase() === 'n' || answer3.toUpperCase() === 'N') {
-  alert('Sorry, you\'re inccorect!!!');
-  console.log(userName + ' did not quite hit the mark on Question 3.')
-} else {
-  alert('You should have given a Y or N answer, so you lose this round.');
-  console.log(userName + ' failed to answer Question 3.')
+function sportsFan() {
+  var answer2 = prompt('Is Nolans favorite sport football?');
+  console.log('The users answer to Question 2 was ' + answer2);
+  if (answer2.toLowerCase() === 'n' || answer2.toUpperCase() === 'N') {
+    //  alert('Correct! My favorite sport is, and always will be hockey.');
+    correctAnswers++;
+    pTagTwo.textContent = 'Sorry, you\'re incorrect!!!.';
+    console.log(userName + ' answered Question 2 correctly!');
+  } else if (answer2.toLowerCase() === 'y' || answer2.toUpperCase() === 'Y') {
+    //  alert('Correct! My favorite sport is, and always will be hockey.');
+    pTagTwo.textContent = 'Correct! My favorite sport is, and always will be hockey.';
+    console.log(userName + ' got Question 2 wrong.');
+  // } else {
+  //   //
+  //   alert('You should have given a Y or N answer, so you lose this round.');
+  //   console.log(userName + ' failed to answer Question 2.')
+  }
 }
+sportsFan();
+
+var pTagThree = document.getElementById('ans-three');
+
+function siblingsFam() {
+
+  var answer3 = prompt('Does Nolan have any siblings?');
+  console.log('The user answer to Question 3 was ' + answer3);
+  if (answer3.toLowerCase() === 'y' || answer3.toUpperCase() === 'Y') {
+    //  alert('Good job! I have one sister named Madison. She does not like me very much.');
+    correctAnswers++;
+    pTagThree.textContent = 'Good job! I have one sister named Madison. She does not like me very much.';
+    console.log(userName + ' aced Question 3.');
+  } else if (answer3.toLowerCase() === 'n' || answer3.toUpperCase() === 'N') {
+    //  alert('Sorry, you\'re inccorect!!!');
+    pTagThree.textContent = 'Sorry, you\'re incorrect!';
+    console.log(userName + ' did not quite hit the mark on Question 3.')
+  }
+}
+siblingsFam();
+
+//} else {
+//  alert('You should have given a Y or N answer, so you lose this round.');
+//  console.log(userName + ' failed to answer Question 3.')
+
+
+
+
+var pTagFour = document.getElementById('ans-four');
+
+function michiganFan() {
+
 
 var answer4 = prompt('Is Nolan a Michigan State Spartans fan?');
 console.log('The user answer to Question 4 was ' + answer4);
 if (answer4.toLowerCase() === 'y' || answer4.toUpperCase() === 'Y') {
-  alert('Correct answer! Go Green, Go White!');
+  //  alert('Correct answer! Go Green, Go White!');
   console.log(userName + ' perfected Question 4.');
+  pTagFour.textContent = 'Correct answer! Go Green, Go White!';
   correctAnswers++;
 } else if (answer4.toLowerCase() === 'n' || answer4.toUpperCase() === 'N') {
-  alert('I am dissapointed. You are incorrect!!!');
+  //  alert('I am dissapointed. You are incorrect!!!');
   console.log(userName + ' got Question 4 wrong. Sadly.')
-} else {
-  alert('You should have given a Y or N answer, so you lose this round.');
+  pTagFour.textContent = 'I am dissapointed. You are incorrect!!!';
+  //} else {
+  //  alert('You should have given a Y or N answer, so you lose this round.');
   console.log(userName + ' failed to answer Question 4.')
 }
-
-var answer5 = prompt('Does Nolan like animals?');
-console.log('The user answer to Question 5 was ' + answer5);
-if (answer5.toLowerCase() === 'y' || answer5.toUpperCase() === 'Y') {
-  alert('Correct! Nolan loves animals more than he likes people.');
-  console.log(userName + ' got Question 5 correct!');
-  correctAnswers++;
-} else if (answer5.toLowerCase() === 'n' || answer5.toUpperCase() === 'N') {
-  alert('Incorrect! Nolan is offended that you think he does not like puppies or kittens.');
-  console.log(userName + ' got Question 5 incorrect. Offending him slightly.')
-} else {
-  alert('You should have given a Y or N answer, so you lose this round.');
-  console.log(userName + ' failed to answer Question 5.')
 }
+michiganFan();
 
-var answer6 = prompt('How old is Nolan?');
-console.log('The user answer to Question 6 was ' + answer6);
-if (answer6 == 19) {
-  alert('Spot on! You guessed correct!');
-  console.log(userName + ' got Question 6 correct!');
-  correctAnswers++;
-} else if (answer6 < 19) {
-  alert('Incorrect! You guessed too young.');
-  console.log(userName + ' got Question 6 wrong.')
-} else if (answer6 > 19) {
-  alert('Incorrect! You guessed too old.');
-  console.log(userName + ' got Question 6 wrong.')
-}
+var pTagFive = document.getElementById('ans-five');
 
-var maxGuesses = 4;
-var currentGuesses = 0;
-console.log('Before the while loop, faveNum is' + faveNum);
-while (faveNum !== 13 && maxGuesses > currentGuesses) {
-  var faveNum = parseInt(prompt('What is Nolan\'s favorite number?'));
-  console.log('faveNum: ' + faveNum)
-  if (faveNum > 13) {
-    alert('Too high.');
-    currentGuesses++;
-  } else if (faveNum < 13) {
-    alert('Too low.');
-    currentGuesses++;
-  } else if (faveNum === 13) {
-    alert('Bullseye!');
+function animalLover() {
+
+  var answer5 = prompt('Does Nolan like animals?');
+  console.log('The user answer to Question 5 was ' + answer5);
+  if (answer5.toLowerCase() === 'y' || answer5.toUpperCase() === 'Y') {
+    //  alert('Correct! Nolan loves animals more than he likes people.');
+    console.log(userName + ' got Question 5 correct!');
     correctAnswers++;
-  } else if (typeof(faveNum) === 'number') {
-    alert('Enter a number, dumbass.');
-  } else {
-    alert('WTF this should never happen.');
-    currentGuesses++;
-  }
+    pTagFive.textContent = 'Correct! Nolan loves animals more than he likes people.';
+  } else if (answer5.toLowerCase() === 'n' || answer5.toUpperCase() === 'N') {
+    //  alert('Incorrect! Nolan is offended that you think he does not like puppies or kittens.');
+    console.log(userName + ' got Question 5 incorrect. Offending him slightly.')
+    pTagFive.textContent = 'Incorrect! Nolan is offended that you think he does not like puppies or kittens.';
+    //} else {
+    //  alert('You should have given a Y or N answer, so you lose this round.');
+    console.log(userName + ' failed to answer Question 5.')
 }
+}
+animalLover();
 
-var familys = ['Madison', 'Kelly', 'Greg', 'Sally', 'Bernard', 'Doug'];
-var isCorrect = false;
-while (isCorrect === false) {
-  var familysAnswer = prompt('Can you name one of Nolan\'s family members?');
-  for (i = 0; i < familys.length; i++) {
-    if (familysAnswer == familys[i]) {
-      alert('Correct!');
-      isCorrect = true;
-      correctAnswers++;
-    }
-  }
-  if (isCorrect == false) {
-    alert('Incorrect!');
-  }
-}
+// var answer6 = prompt('How old is Nolan?');
+// console.log('The user answer to Question 6 was ' + answer6);
+// if (answer6 == 19) {
+//   alert('Spot on! You guessed correct!');
+//   console.log(userName + ' got Question 6 correct!');
+//   correctAnswers++;
+// } else if (answer6 < 19) {
+//   alert('Incorrect! You guessed too young.');
+//   console.log(userName + ' got Question 6 wrong.')
+// } else if (answer6 > 19) {
+//   alert('Incorrect! You guessed too old.');
+//   console.log(userName + ' got Question 6 wrong.')
+// }
+
+// var maxGuesses = 4;
+// var currentGuesses = 0;
+// console.log('Before the while loop, faveNum is' + faveNum);
+// while (faveNum !== 13 && maxGuesses > currentGuesses) {
+//   var faveNum = parseInt(prompt('What is Nolan\'s favorite number?'));
+//   console.log('faveNum: ' + faveNum)
+//   if (faveNum > 13) {
+//     alert('Too high.');
+//     currentGuesses++;
+//   } else if (faveNum < 13) {
+//     alert('Too low.');
+//     currentGuesses++;
+//   } else if (faveNum === 13) {
+//     alert('Bullseye!');
+//     correctAnswers++;
+//   } else if (typeof(faveNum) === 'number') {
+//     alert('Enter a number, dumbass.');
+//   } else {
+//     alert('WTF this should never happen.');
+//     currentGuesses++;
+//   }
+// }
+
+// var familys = ['Madison', 'Kelly', 'Greg', 'Sally', 'Bernard', 'Doug'];
+// var isCorrect = false;
+// while (isCorrect === false) {
+//   var familysAnswer = prompt('Can you name one of Nolan\'s family members?');
+//   for (i = 0; i < familys.length; i++) {
+//     if (familysAnswer == familys[i]) {
+//       alert('Correct!');
+//       isCorrect = true;
+//       correctAnswers++;
+//     }
+//   }
+//   if (isCorrect == false) {
+//     alert('Incorrect!');
+//   }
+// }
 
 alert('Correct Answers: ' + correctAnswers)
